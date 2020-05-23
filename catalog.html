@@ -48,18 +48,28 @@
             <li><a href="blank.html">Инструмент</a></li>
             <li>Перфораторы</li>
         </ul>
-        <section>
-            <h2>Производители:</h2>
-            <input id="Bosch" type="checkbox" name="Bosch" checked><label for="Bosch">Bosch</label><br>
-            <input id="interskol" type="checkbox" name="interskol"><label for="interskol">Интерскол</label><br>
-            <input id="makita" type="checkbox" name="makita" checked><label for="makita">Makita</label><br>
-            <input id="dewalt" type="checkbox" name="dewalt"><label for="dewalt">Dewalt</label><br>
-            <input id="hitachi" type="checkbox" name="hitachi"><label for="hitachi">Hitachi</label>
-            <h2>Питание:</h2>
-            <input type="radio" checked id="accum" name="power"><label for="accum">Аккумуляторные</label><br>
-            <input type="radio" id="network" name="power"><label for="network">Сетевые</label><br>
-            <button type="button">Показать</button>
-        </section>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li><input id="Bosch" type="checkbox" name="Bosch" checked><label for="Bosch">Bosch</label></li>
+                    <li><input id="interskol" type="checkbox" name="interskol"><label for="interskol">Интерскол</label>
+                    </li>
+                    <li><input id="makita" type="checkbox" name="makita" checked><label for="makita">Makita</label></li>
+                    <li><input id="dewalt" type="checkbox" name="dewalt"><label for="dewalt">Dewalt</label></li>
+                    <li><input id="hitachi" type="checkbox" name="hitachi"><label for="hitachi">Hitachi</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                    <li><input type="radio" checked id="accum" name="power"><label for="accum">Аккумуляторные</label>
+                    </li>
+                    <li><input type="radio" id="network" name="power"><label for="network">Сетевые</label></li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
         <section>
             <h2>Список перфораторов</h2>
             <ul>
@@ -193,6 +203,12 @@
             </ul>
         </div>
     </footer>
+    <section>
+        <h2>Товар добавлен в корзину!</h2>
+        <button type="button"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть окно"></button>
+        <a href="blank.html">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+    </section>
 </body>
 
 </html>

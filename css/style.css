@@ -15,3 +15,7 @@
   --error: #BA2732;
   --light-gray: #EAEAEA;
 }
+
+.popup {
+  display: none;
+}

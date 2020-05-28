@@ -5,19 +5,26 @@
   --basic-greylight: #C5C5C5;
   --basic-background: #F1F5F7;
 
+  --gray-dark: #293449;
+  --gray: #32425C;
   --black: #000000;
   --wight: #FFFFFF;
-
+  --wight-transparent: rgba(255, 255, 255, 0.5);
+  --wight-background: rgba(255, 255, 255, 0.9);
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --spesial-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
+  --link-active: #161D29;
+  --background-active: #1D2739;
+  ;
 
   --success: #5FBB2D;
   --warning: #FFBF47;
   --error: #BA2732;
   --light-gray: #EAEAEA;
+  --box-shadow: rgba(0, 0, 0, 0.24);
 }
 
 /* global */
@@ -52,4 +59,140 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* header */
+
+.header-row {
+  background-color: var(--gray-dark);
+}
+
+.header-row a,
+.header-nav a,
+.search::placeholder,
+.search {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wight);
+  font-family: 'Cuprum', sans-serif;
+}
+
+.header-logo {
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0px var(--box-shadow);
+}
+
+.header-logo:active {
+  background-color: var(--error);
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  width: 271px;
+  height: 42px;
+}
+
+.search:focus,
+.search:focus::placeholder {
+  background-color: var(--wight);
+  color: var(--black);
+}
+
+.checkout {
+  background-color: var(--basic-green);
+  display: inline-block;
+  width: 150px;
+  height: 42px;
+}
+
+.checkout:hover {
+  background-color: var(--success);
+}
+
+.checkout:active {
+  color: var(--wight-transparent);
+}
+
+.header-row-link {
+  display: inline-block;
+  width: 150px;
+  height: 42px;
+}
+
+.header-row-link:active {
+  background-color: var(--link-active);
+  color: var(--wight-transparent);
+}
+
+.header-nav {
+  background-color: var(--basic-background);
+}
+
+.description {
+  color: var(--basic-red);
+  font-family: 'Cuprum', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+a.header-phone {
+  color: var(--basic-red);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.header-nav .address,
+.user-links a {
+  font-style: normal;
+  font-family: 'Cuprum', sans-serif;
+  color: var(--gray);
+}
+
+.header-nav .address {
+  font-size: 14px;
+}
+
+.user-links a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.login a,
+a.user {
+  display: inline-block;
+  background-color: var(--wight-background);
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.login a:hover,
+.user-links a:hover {
+  color: var(--basic-red);
+}
+
+.login a:active,
+a.user:active,
+.user-links a:active {
+  color: var(--basic-greylight);
+}
+
+.main-nav {
+  background-color: var(--gray);
+}
+
+.main-nav a:hover {
+  background-color: var(--gray-dark);
+}
+
+.main-nav a:active {
+  background-color: var(--background-active);
+  color: var(--wight);
+  opacity: 0.5;
 }

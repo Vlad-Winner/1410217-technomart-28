@@ -196,3 +196,29 @@ a.user:active,
   color: var(--wight);
   opacity: 0.5;
 }
+
+.section-description h2 {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.section-description ul {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+}
+
+.button {
+  background-color: var(--basic-red);
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--wight);
+  text-transform: uppercase;
+}
+
+.button:active {
+  background-color: var(--error);
+}

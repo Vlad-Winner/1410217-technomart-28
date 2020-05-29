@@ -48,7 +48,7 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   color: var(--black);
   font-size: 13px;
   line-height: 24px;
@@ -77,7 +77,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--wight);
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 .header-logo {
@@ -136,7 +136,7 @@ img {
 
 .description {
   color: var(--basic-red);
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -153,7 +153,7 @@ a.header-phone {
 .header-nav .address,
 .user-links a {
   font-style: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   color: var(--gray);
 }
 
@@ -202,7 +202,7 @@ a.user:active,
 
 .section-description h2,
 .catalog-title {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 30px;
@@ -210,13 +210,13 @@ a.user:active,
 }
 
 .section-description ul {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
 }
 
 .button {
   background-color: var(--basic-red);
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: var(--wight);
@@ -232,7 +232,7 @@ a.user:active,
 .footer-nav,
 .footer-nav address,
 .footer-nav a {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-size: 18px;
   color: var(--basic-background);
@@ -267,7 +267,7 @@ a.logo {
 
 .footer-info,
 .footer-info a {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
@@ -349,7 +349,7 @@ a.logo {
 
 .product-hover {
   text-transform: uppercase;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
 }

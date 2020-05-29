@@ -10,9 +10,9 @@
   --gray-dark: #293449;
   --gray: #32425C;
   --black: #000000;
-  --wight: #FFFFFF;
-  --wight-transparent: rgba(255, 255, 255, 0.5);
-  --wight-background: rgba(255, 255, 255, 0.9);
+  --white: #FFFFFF;
+  --white-transparent: rgba(255, 255, 255, 0.5);
+  --white-background: rgba(255, 255, 255, 0.9);
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --spesial-lilac: #DC91D8;
@@ -61,7 +61,7 @@ img {
 .search {
   font-size: 18px;
   line-height: 24px;
-  color: var(--wight);
+  color: var(--white);
   font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
@@ -85,7 +85,7 @@ img {
 
 .search:focus,
 .search:focus::placeholder {
-  background-color: var(--wight);
+  background-color: var(--white);
   color: var(--black);
 }
 
@@ -101,7 +101,7 @@ img {
 }
 
 .checkout:active {
-  color: var(--wight-transparent);
+  color: var(--white-transparent);
 }
 
 .header-row-link {
@@ -112,7 +112,7 @@ img {
 
 .header-row-link:active {
   background-color: var(--link-active);
-  color: var(--wight-transparent);
+  color: var(--white-transparent);
 }
 
 .header-nav {
@@ -154,7 +154,7 @@ img {
 .login a,
 a.user {
   display: inline-block;
-  background-color: var(--wight-background);
+  background-color: var(--white-background);
   color: var(--black);
   font-size: 21px;
   line-height: 21px;
@@ -181,7 +181,7 @@ a.user:active,
 
 .main-nav a:active {
   background-color: var(--background-active);
-  color: var(--wight);
+  color: var(--white);
   opacity: 0.5;
 }
 
@@ -204,7 +204,7 @@ a.user:active,
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: var(--wight);
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -258,7 +258,7 @@ a.logo {
 }
 
 .footer-info {
-  color: var(--wight);
+  color: var(--white);
   background-color: var(--gray-dark);
 }
 
@@ -310,7 +310,7 @@ a.logo {
 .button-navigation {
   line-height: 18px;
   text-transform: uppercase;
-  background: var(--wight);
+  background: var(--white);
   border: 1px solid var(--border-greylight);
   box-sizing: border-box;
   border-radius: 2px;
@@ -340,7 +340,7 @@ a.logo {
 }
 
 .product-hover .buy {
-  color: var(--wight);
+  color: var(--white);
   background-color: var(--basic-green);
 }
 
@@ -369,7 +369,7 @@ a.logo {
 }
 
 .products .price {
-  color: var(--wight);
+  color: var(--white);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;

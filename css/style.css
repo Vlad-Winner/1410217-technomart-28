@@ -32,21 +32,6 @@
 
 /* global */
 
-.popup {
-  display: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
-}
-
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
   color: var(--black);
@@ -142,7 +127,7 @@ img {
   line-height: 23px;
 }
 
-a.header-phone {
+.header-phone {
   color: var(--basic-red);
   font-style: normal;
   font-weight: bold;
@@ -390,4 +375,21 @@ a.logo {
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-red);
+}
+
+/* hidden */
+
+.remove {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }

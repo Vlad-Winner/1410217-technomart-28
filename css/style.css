@@ -1,8 +1,10 @@
 :root {
   --basic-red: #EE3643;
   --basic-green: #63A63E;
+  --basic-green-dark: #518534;
   --basic-grey: #3D546F;
   --basic-greylight: #C5C5C5;
+  --border-greylight: #E5E5E5;
   --basic-background: #F1F5F7;
 
   --gray-dark: #293449;
@@ -18,10 +20,12 @@
   --special-yellowlight: #FFD180;
   --link-active: #161D29;
   --background-active: #1D2739;
+  --background-catalog-title: #F2F6F8;
 
   --success: #5FBB2D;
   --warning: #FFBF47;
   --error: #BA2732;
+  --del: #A9A9A9;
   --light-gray: #EAEAEA;
   --box-shadow: rgba(0, 0, 0, 0.24);
 }
@@ -196,7 +200,8 @@ a.user:active,
   opacity: 0.5;
 }
 
-.section-description h2 {
+.section-description h2,
+.catalog-title {
   font-family: 'Cuprum', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -283,4 +288,106 @@ a.logo {
 .footer-info a:active {
   color: var(--basic-red);
   text-decoration-line: none;
+}
+
+/* catalog */
+
+.catalog-title {
+  color: var(--gray);
+  background-color: var(--background-catalog-title);
+}
+
+.breadcrumbs a,
+.breadcrumbs {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter input:disabled,
+.filter input:disabled+label {
+  opacity: 0.4;
+}
+
+.button-navigation {
+  line-height: 18px;
+  text-transform: uppercase;
+  background: var(--wight);
+  border: 1px solid var(--border-greylight);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-navigation:hover {
+  border-color: var(--basic-greylight);
+}
+
+.button-navigation:active {
+  border-color: var(--basic-red);
+}
+
+/* products */
+
+.products h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-hover {
+  text-transform: uppercase;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product-hover .buy {
+  color: var(--wight);
+  background-color: var(--basic-green);
+}
+
+.product-hover .buy:hover {
+  background-color: var(--success);
+}
+
+.product-hover .buy:active {
+  background-color: var(--basic-green-dark);
+}
+
+.product-hover .favorite {
+  color: var(--gray);
+}
+
+.product-hover .favorite:active {
+  opacity: 0.5;
+}
+
+.products del {
+  color: var(--del);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.products .price {
+  color: var(--wight);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
 }

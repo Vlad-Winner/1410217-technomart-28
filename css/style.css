@@ -344,14 +344,25 @@ img {
 .description-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
 
 .section-description {
   width: 478px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-wrapper p {
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .section-contact {
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .description-wrapper h2 {
@@ -360,20 +371,48 @@ img {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
+  margin: 0;
 }
 
 .description-wrapper ul {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
+  list-style: none;
+  padding-left: 38px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
+
+.description-wrapper li {
+  margin-bottom: 12px;
+}
+
 
 .button {
   background-color: var(--basic-red);
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   color: var(--white);
   text-transform: uppercase;
+  display: inline-block;
+  min-height: 38px;
+  text-align: center;
+}
+
+.map-mini {
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+.write-to-us {
+  margin-top: auto;
+}
+
+.about-company {
+  margin-top: auto;
+  align-self: flex-start;
+  width: 220px;
 }
 
 .button:active {

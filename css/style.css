@@ -589,6 +589,10 @@ img {
   padding-left: 29px;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .breadcrumbs {
   grid-row: 1;
   grid-column: 1 / -1;

@@ -28,6 +28,7 @@
   --del: #A9A9A9;
   --light-gray: #EAEAEA;
   --box-shadow: rgba(0, 0, 0, 0.24);
+  --button-shadow: #367315;
 }
 
 /* global */
@@ -673,12 +674,16 @@ img {
   grid-row-gap: 18px;
   padding: 0;
   margin-top: 0;
+  margin-bottom: 48px;
 }
 
 .products h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  margin: 0;
+  padding-bottom: 7px;
+  margin-bottom: auto;
 }
 
 .product {
@@ -686,12 +691,22 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
   border: 1px solid var(--light-gray);
 }
 
-.product-img {
+.product-img-wrapper {
+  min-height: 178px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   order: -1;
+  padding-right: 3px;
+}
+
+.product-img {
+  padding-bottom: 6px;
+  padding-right: 2px;
 }
 
 .product-hover {
@@ -699,11 +714,21 @@ img {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
+  padding-bottom: 54px;
+  align-self: flex-end;
 }
 
 .product-hover .buy {
   color: var(--white);
   background-color: var(--basic-green);
+  min-height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  width: 135px;
+  padding-bottom: 3px;
+  box-shadow: inset 0px -3px 0px var(--button-shadow);
+  border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 .product-hover .buy:hover {
@@ -716,6 +741,17 @@ img {
 
 .product-hover .favorite {
   color: var(--gray);
+  border: 3px solid var(--basic-green);
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 135px;
+  min-height: 38px;
+  line-height: 32px;
+}
+
+.product-hover .favorite:hover {
+  border-color: var(--gray);
 }
 
 .product-hover .favorite:active {
@@ -734,11 +770,15 @@ img {
   color: var(--white);
   font-weight: bold;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 38px;
   text-transform: uppercase;
   background-color: var(--basic-red);
-  position: absolute;
-  bottom: 21px;
+  margin-bottom: 21px;
+  margin-top: 13px;
+  display: inline-block;
+  width: 129px;
+  min-height: 38px;
+  border-radius: 2px;
 }
 
 /* hidden */

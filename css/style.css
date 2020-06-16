@@ -94,6 +94,7 @@ img {
 .buy-wrapper {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -306,6 +307,7 @@ img {
 
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -343,6 +345,7 @@ img {
 
 .description-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 70px;
   margin-top: 70px;
@@ -428,6 +431,7 @@ img {
 .footer-nav {
   display: flex;
   justify-content: space-between;
+  min-height: 193px;
 }
 
 .footer-nav address {
@@ -435,6 +439,10 @@ img {
   font-style: normal;
   font-size: 18px;
   color: var(--basic-background);
+}
+
+.footer-phone {
+  padding-top: 22px;
 }
 
 .footer-phone a {
@@ -447,6 +455,8 @@ img {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 37px;
 }
 
 .footer-links-wrapper {
@@ -463,6 +473,8 @@ img {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 34px;
 }
 
 .product-nav :first-child {
@@ -479,8 +491,12 @@ img {
   display: inline-block;
   background-color: var(--basic-red);
   width: 220px;
-  height: 68px;
+  min-height: 68px;
   box-shadow: inset 0px -5px 0px var(--box-shadow);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5px;
 }
 
 .logo:active {
@@ -507,17 +523,21 @@ img {
   color: var(--white);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  min-height: 107px;
+  align-items: center;
 }
 
 .social-links {
   justify-self: center;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .footer-copyright {
   justify-self: end;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 300px;
 }
@@ -571,6 +591,7 @@ img {
   grid-row: 1;
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 0;
   margin-top: 21px;
@@ -657,7 +678,6 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
 }
 
 .product {

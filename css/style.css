@@ -520,6 +520,16 @@ img {
 
 .description-wrapper li {
   margin-bottom: 12px;
+  position: relative;
+}
+
+.description-wrapper li::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  border-bottom: 2px solid var(--basic-red);
+  left: -37px;
+  top: 14px;
 }
 
 

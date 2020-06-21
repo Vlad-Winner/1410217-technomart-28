@@ -674,6 +674,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  padding-left: 13px;
+  padding-top: 7px;
+}
+
+a:hover .social-icon {
+  fill: var(--basic-red);
 }
 
 .footer-copyright {

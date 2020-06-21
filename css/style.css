@@ -132,6 +132,38 @@ img {
 
 .search {
   padding-left: 42px;
+  position: relative;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 237px;
+  top: 12px;
+}
+
+.search:hover~.search-icon g,
+.search-icon:hover g {
+  opacity: 1;
+}
+
+.search:active~.search-icon g,
+.search-icon:active g,
+.search:focus~.search-icon g,
+.search-icon:focus g {
+  opacity: 1;
+}
+
+.search:active~.search-icon path,
+.search-icon:active path,
+.search:focus~.search-icon path,
+.search-icon:focus path {
+  fill: var(--basic-red);
 }
 
 .search:focus,
@@ -161,11 +193,53 @@ img {
   width: 150px;
   min-height: 42px;
   line-height: 42px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .header-row-link:active {
   background-color: var(--link-active);
   color: var(--white-transparent);
+}
+
+.bookmark {
+  padding-left: 17px;
+}
+
+.bookmark-icon {
+  width: 14px;
+  height: 16px;
+  position: absolute;
+  left: 19px;
+  top: 13px;
+}
+
+.bookmark:hover g {
+  opacity: 1;
+}
+
+.bookmark:active g {
+  opacity: 0.3;
+}
+
+.cart {
+  padding-left: 19px;
+}
+
+.cart-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 25px;
+  top: 13px;
+}
+
+.cart:hover g {
+  opacity: 1;
+}
+
+.cart:active g {
+  opacity: 0.3;
 }
 
 .header-nav-wrapper {
@@ -204,12 +278,26 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
-  line-height: 39px;
+  line-height: 30px;
   border: 3px solid var(--white);
   box-sizing: border-box;
   display: inline-block;
   width: 270px;
   min-height: 45px;
+  position: relative;
+  padding-top: 7px;
+  padding-left: 30px;
+}
+
+.header-phone::before {
+  content: '';
+  background-image: url('../img/icon-phone.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 37px;
+  top: 11px;
 }
 
 .header-nav .address {
@@ -259,6 +347,25 @@ img {
   width: 121px;
   min-height: 45px;
   line-height: 45px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 18px;
+}
+
+.come svg {
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
+.come:hover path {
+  fill: var(--basic-grey);
+}
+
+.come:active path {
+  fill: var(--basic-greylight);
 }
 
 .registration {
@@ -285,13 +392,35 @@ img {
   width: 299px;
   min-height: 45px;
   text-align: center;
+  position: relative;
+}
+
+.user-icon {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+
+.logout-icon {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+}
+
+.user:hover path {
+  fill: var(--basic-grey);
+}
+
+.user:active path {
+  fill: var(--basic-greylight);
 }
 
 .login a:hover {
   color: var(--basic-red);
 }
 
-.user-links a:hover {
+.user-links a:hover,
+.user-links:hover {
   color: var(--basic-red);
 }
 
@@ -303,7 +432,8 @@ img {
   color: var(--basic-greylight);
 }
 
-.user-links a:active {
+.user-links a:active,
+.user-links:active {
   color: var(--basic-greylight);
 }
 

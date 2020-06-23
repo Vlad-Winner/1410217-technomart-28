@@ -23,6 +23,7 @@
   --background-active: #1D2739;
   --background-catalog-title: #F2F6F8;
 
+  --popup-add-cart: #F1F1F1;
   --red-hover: #CA2C37;
   --success: #5FBB2D;
   --warning: #FFBF47;
@@ -927,6 +928,7 @@ input:disabled label::before {
   width: 100%;
   margin-top: 9px;
   min-height: 38px;
+  cursor: pointer;
 }
 
 .button-navigation:hover {
@@ -1109,6 +1111,101 @@ input:disabled label::before {
 
 .price:active {
   background-color: var(--error);
+}
+
+/* popup */
+
+.add-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  min-height: 282px;
+  box-shadow: 0px 4px 20px var(--product-shadow);
+  margin-top: -140px;
+  margin-left: -290px;
+  box-sizing: border-box;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.decor-add-cart {
+  background-color: var(--basic-red);
+  height: 7px;
+  width: 100%;
+  order: -2;
+}
+
+.header-add-cart {
+  position: relative;
+  font-size: 24px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  margin-top: 27px;
+}
+
+.header-add-cart::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/icon-mark.svg');
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  top: -21px;
+  left: -95px;
+}
+
+.button-close {
+  background-image: url('../img/icon-close.png');
+  background-repeat: no-repeat;
+  background-position: 11px 11px;
+  width: 43px;
+  height: 43px;
+  border: none;
+  background-color: var(--white);
+  order: -1;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.add-cart-wrapper {
+  height: 112px;
+  margin-top: auto;
+  background-color: var(--popup-add-cart);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-add-cart {
+  display: block;
+  height: 38px;
+  background-color: var(--basic-red);
+  width: 192px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  line-height: 38px;
+}
+
+.proceed {
+  width: 192px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--white);
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* hidden */

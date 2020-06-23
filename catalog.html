@@ -323,11 +323,14 @@
       </div>
     </div>
   </footer>
-  <section class="remove">
-    <h2>Товар добавлен в корзину!</h2>
-    <button type="button" aria-label="Закрыть окно"></button>
-    <a href="blank.html">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
+  <section class="add-cart visually-hidden">
+    <div class="decor-add-cart"></div>
+    <h2 class="header-add-cart">Товар добавлен в корзину!</h2>
+    <button type="button" aria-label="Закрыть окно" class="button-close"></button>
+    <div class="add-cart-wrapper">
+      <a href="blank.html" class="checkout-add-cart">Оформить заказ</a>
+      <button type="button" class="proceed">Продолжить покупки</button>
+    </div>
   </section>
 </body>
 

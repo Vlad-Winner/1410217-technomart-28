@@ -43,6 +43,7 @@ body {
   font-size: 13px;
   line-height: 24px;
   min-width: 960px;
+  position: relative;
 }
 
 a {
@@ -562,6 +563,10 @@ img {
   margin-top: auto;
   align-self: flex-start;
   width: 220px;
+}
+
+.button:hover {
+  background-color: var(--red-hover);
 }
 
 .button:active {
@@ -1113,7 +1118,7 @@ input:disabled label::before {
   background-color: var(--error);
 }
 
-/* popup */
+/* add-cart popup */
 
 .add-cart {
   position: fixed;
@@ -1206,6 +1211,42 @@ input:disabled label::before {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+/* map-popup */
+
+.map-popup {
+  box-sizing: border-box;
+  width: 943px;
+  height: 449px;
+  position: absolute;
+  bottom: 333px;
+  left: 50%;
+  margin-left: -480px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px var(--product-shadow);
+}
+
+.map-popup::before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  content: '';
+  border-top: 5px solid var(--basic-red);
+}
+
+.button-close-map {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  background-image: url('../img/icon-close.png');
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 41px;
+  border: none;
+  cursor: pointer;
 }
 
 /* hidden */

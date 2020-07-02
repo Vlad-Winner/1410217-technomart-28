@@ -177,23 +177,26 @@
       </div>
     </div>
   </footer>
-  <section class="remove">
+  <section class="write-us visually-hidden">
     <h2 class="visually-hidden">Написать нам:</h2>
-    <button type="button" aria-label="Закрыть окно"></button>
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button type="submit">Оформить заказ</button>
+    <div class="decor-add-cart"></div>
+    <button type="button" aria-label="Закрыть окно" class="button-close-write-us"></button>
+    <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
+      <div class="write-us-form-wrapper">
+        <p>
+          <label for="write-us-name" class="write-us-label">Ваше имя:</label><br>
+          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия" class="write-us-input">
+        </p>
+        <p>
+          <label for="write-us-email" class="write-us-label">Ваш e-mail:</label><br>
+          <input type="email" id="write-us-email" name="email" placeholder="email@example.com" class="write-us-input">
+        </p>
+        <p class="write-us-textarea">
+          <label for="write-us-text" class="write-us-label">Текст письма:</label><br>
+          <textarea id="write-us-text" name="text" placeholder="В свободной форме" class="write-us-text"></textarea>
+        </p>
+      </div>
+      <div class="write-us-submit-wrapper"><button type="submit" class="write-us-submit">Отправить</button></div>
     </form>
   </section>
   <section class="map-popup visually-hidden">

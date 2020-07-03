@@ -172,8 +172,7 @@ img {
   fill: var(--basic-red);
 }
 
-.search:focus,
-.search:focus::placeholder {
+.search:focus {
   background-color: var(--white);
   color: var(--black);
 }
@@ -1316,6 +1315,10 @@ input:disabled label::before {
   margin-top: 10px;
 }
 
+.write-us-input::placeholder {
+  color: var(--del);
+}
+
 .write-us-textarea {
   margin-top: 15px;
   width: 460px;
@@ -1332,6 +1335,10 @@ input:disabled label::before {
   width: 460px;
   min-height: 114px;
   resize: none;
+}
+
+.write-us-text::placeholder {
+  color: var(--del);
 }
 
 .write-us-label {

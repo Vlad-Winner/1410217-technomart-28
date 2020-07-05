@@ -108,6 +108,24 @@
         <li><a>Перфораторы</a></li>
       </ul>
       <form action="https://echo.htmlacademy.ru" method="GET">
+        <h2>Фильтр:</h2>
+        <fieldset>
+          <legend>Цена:</legend>
+          <div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle-switch toggle-min"></div>
+              <div class="toggle-switch toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <input type="number" name="min-price" value="0">
+              <span>-</span>
+              <input type="number" name="max-price" value="30000">
+            </div>
+          </div>
+        </fieldset>
         <fieldset class="fieldset">
           <legend class="legend">Производители:</legend>
           <ul class="filter">
@@ -127,7 +145,7 @@
         </fieldset>
         <fieldset class="fieldset">
           <legend class="legend toggle-legend">Питание:</legend>
-          <ul class="filter toogle">
+          <ul class="filter toggle">
             <li><input type="radio" checked id="accum" name="power" class="visually-hidden radio"><label for="accum"
                 class="radio-label">Аккумуляторные</label>
             </li>
@@ -139,6 +157,20 @@
       </form>
       <section>
         <h2 class="visually-hidden">Список перфораторов</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <ul>
+              <li><input type="radio" id="price"><label for="price" name="sort-name">По цене</label></li>
+              <li><input type="radio" id="type"><label for="type" name="sort-name">По типу</label></li>
+              <li><input type="radio" id="function" name="sort-name"><label for="function">По функционалу</label></li>
+            </ul>
+            <ul>
+              <li><input type="radio" name="sort-direction" aria-label="по возрастанию"></li>
+              <li><input type="radio" name="sort-direction" aria-label="по убыванию"></li>
+            </ul>
+          </fieldset>
+        </form>
         <ul class="products">
           <li class="product">
             <h3>Перфоратор <span class="uppercase">Bosch</span><br>BFG 6000</h3>
@@ -257,6 +289,12 @@
           </li>
         </ul>
       </section>
+      <div>
+        <a href="#">1</a>
+        <a href="blank.html">2</a>
+        <a href="blank.html">3</a>
+        <a href="blank.html">Следующая</a>
+      </div>
     </div>
   </main>
   <footer>

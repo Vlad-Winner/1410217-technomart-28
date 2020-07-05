@@ -825,7 +825,7 @@ a:hover .social-icon {
   margin-top: 0;
 }
 
-.toogle {
+.toggle {
   margin-top: 8px;
 }
 
@@ -838,7 +838,7 @@ a:hover .social-icon {
   box-sizing: border-box;
 }
 
-.toogle li:first-child {
+.toggle li:first-child {
   min-height: 35px;
   padding-top: 15px;
   padding-bottom: 5px;
